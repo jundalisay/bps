@@ -26,6 +26,11 @@
   - get summary
 - train
 - visualize results
+- test on samples
+
+> end time: 12 midnight Oct 19, 2022 (15 hours)
+
+
 
 
 ## Problem: Limited samples causes overfitting
