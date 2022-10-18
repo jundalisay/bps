@@ -147,6 +147,24 @@ plt.show()
 
 # Test model on an image
 
+civilian_url = "https://github.com/jundalisay/bps/blob/master/Hand_0005116.jpg?raw=true"
+civilian_path = tf.keras.utils.get_file('Hand_0005116', origin=civilian_url)
+
+img = tf.keras.utils.load_img(
+    civilian_path, target_size=(img_height, img_width)
+)
+img_array = tf.keras.utils.img_to_array(img)
+img_array = tf.expand_dims(img_array, 0) # Create a batch
+
+predictions = model.predict(img_array)
+score = tf.nn.softmax(predictions[0])
+
+print(
+    "This image most likely belongs to {} with a {:.2f} percent confidence."
+    .format(class_names[np.argmax(score)], 100 * np.max(score))
+)
+
+
 criminal_url = "https://github.com/jundalisay/bps/blob/master/Hand_0000107.jpg?raw=true"
 criminal_path = tf.keras.utils.get_file('Hand_0000107', origin=criminal_url)
 
