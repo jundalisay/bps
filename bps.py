@@ -13,12 +13,10 @@ from tensorflow.keras.models import Sequential
 # Import Data
 
 import pathlib
-path_to_downloaded_file = tf.keras.utils.get_file(
-    "bps",
-    "https://github.com/jundalisay/bps/blob/master/bps.tar.xz?raw=true",
-    untar=True)
 
-data_dir = pathlib.Path(path_to_downloaded_file)
+dataset_url = "https://github.com/jundalisay/bps/blob/master/palms.tar.xz?raw=true"
+data_dir = tf.keras.utils.get_file('palms', origin=dataset_url, untar=True)
+data_dir = pathlib.Path(data_dir)
 
 
 # Count images to verify 
@@ -29,7 +27,7 @@ print(image_count)
 
 # Create Training and Validation Data from Data
 
-batch_size = 7
+batch_size = 10
 img_height = 400
 img_width = 533
 
@@ -165,8 +163,9 @@ print(
 )
 
 
-criminal_url = "https://github.com/jundalisay/bps/blob/master/Hand_0000107.jpg?raw=true"
-criminal_path = tf.keras.utils.get_file('Hand_0000107', origin=criminal_url)
+
+criminal_url = "https://github.com/jundalisay/bps/blob/master/Hand_0005083.jpg?raw=true"
+criminal_path = tf.keras.utils.get_file('Hand_0005083', origin=criminal_url)
 
 img2 = tf.keras.utils.load_img(
     criminal_path, target_size=(img_height, img_width)

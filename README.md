@@ -2,6 +2,9 @@
 
 ![Splash](bps.jpg)
 
+Website: https://superphysics.org/bps/
+Google Colab: https://colab.research.google.com/drive/1tqQXIosRe6raZaHaFjAVyP8K0BeFPCE-?usp=sharing
+
 
 > start time: 9am Oct 18, 2022
 
