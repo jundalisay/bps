@@ -2,6 +2,10 @@
 
 ![Splash](bps.jpg)
 
+- Juan Dalisay Jr.
+- Ehmil Cataluna
+- Francisco Palmares
+
 Website: https://superphysics.org/bps/
 Google Colab: https://colab.research.google.com/drive/1tqQXIosRe6raZaHaFjAVyP8K0BeFPCE-?usp=sharing
 
@@ -10,8 +14,7 @@ Google Colab: https://colab.research.google.com/drive/1tqQXIosRe6raZaHaFjAVyP8K0
 
 1. Import hands dataset from Kaggle and get only right hand palms  https://www.kaggle.com/datasets/shyambhu/hands-and-palm-images-dataset/code?resource=download
 
-2. Create Python Script
-
+2. Create Python Script on Google Colab
 
 - import modules
 - data
@@ -30,6 +33,9 @@ Google Colab: https://colab.research.google.com/drive/1tqQXIosRe6raZaHaFjAVyP8K0
 - train
 - visualize results
 - test on samples
+  - Hand_0005083.jpg
+  - Hand_0005116.jpg
+
 
 > end time: 12 midnight Oct 19, 2022 (15 hours)
 
@@ -38,17 +44,6 @@ Google Colab: https://colab.research.google.com/drive/1tqQXIosRe6raZaHaFjAVyP8K0
 
 ## Problem: Limited samples causes overfitting
 
-## Solutions:
+## Solution:
 
-1. Data augmentation takes the approach of generating additional training data from your existing examples
-
-
-Notes: 
-
-Keras Sequential has 3 convolution blocks as tf.keras.layers.Conv2D. It has:
-- a max pooling layer  as tf.keras.layers.MaxPooling2D in each of them
-- a fully-connected layer as tf.keras.layers.Dense
-  - It has 128 units on top of it that is activated by a ReLU
-
-
-
+Data augmentation -- generate additional training data from existing examples
