@@ -6,8 +6,9 @@
 - Ehmil Cataluna
 - Francisco Palmares
 
-Website: https://superphysics.org/bps/
-Google Colab: https://colab.research.google.com/drive/1tqQXIosRe6raZaHaFjAVyP8K0BeFPCE-?usp=sharing
+### Website: https://superphysics.org/bps/
+
+### Google Colab: https://colab.research.google.com/drive/1tqQXIosRe6raZaHaFjAVyP8K0BeFPCE-?usp=sharing
 
 
 > start time: 9am Oct 18, 2022
@@ -42,8 +43,12 @@ Google Colab: https://colab.research.google.com/drive/1tqQXIosRe6raZaHaFjAVyP8K0
 
 
 
-## Problem: Limited samples causes overfitting
+### Problem/s Encountered
 
-## Solution:
+- Limited samples causes overfitting
+- Palm images too varied
 
-Data augmentation -- generate additional training data from existing examples
+### Workaround
+
+- Data augmentation -- generate additional training data from existing examples
+- Manually select palm images that are proper
